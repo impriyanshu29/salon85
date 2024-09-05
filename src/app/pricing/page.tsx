@@ -275,7 +275,7 @@ export default function Price() {
                 <TableRow>
                   <TableCell />
                   <TableCell
-                    className="text-background font-headingFont font-bold dark:text-gray-300 bg-inherit dark:bg-gray-800"
+                    className="text-background  font-headingFont font-bold dark:text-gray-300 bg-inherit "
                     sx={{
                       backgroundColor: 'inherit',
                       color: 'inherit',
@@ -285,7 +285,7 @@ export default function Price() {
                   </TableCell>
 
                   <TableCell
-                    className="text-background font-headingFont font-bold dark:text-gray-300 bg-inherit dark:bg-gray-800"
+                    className="text-background font-headingFont font-bold dark:text-gray-300 bg-inherit "
                     align="right"
                     sx={{
                       backgroundColor: 'inherit',
@@ -297,7 +297,7 @@ export default function Price() {
 
                 </TableRow>
               </TableHead>
-              <TableBody>
+              <TableBody className='bg-background bg-gradient-to-r  dark:from-black dark:to-gray-900 ' >
                 {rows.map((row) => (
                   <Row key={row.service} row={row} />
                 ))}
