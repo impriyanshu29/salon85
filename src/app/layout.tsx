@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Salon85 | Premium Salon Services in Park Street, Kolkata',
     description: 'Salon85 offers top-notch grooming and beauty services for men and women in Park Street, Kolkata.',
-    url: 'https://www.salon85.co',
+    url: 'https://www.salon85.in',
     siteName: 'Salon85',
     locale: 'en_US',
     type: 'website',
@@ -56,16 +56,59 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "description": "Salon85 offers premium salon services for men and women in Park Street, Kolkata.",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Your Street Address", // Update with your street address
-              "addressLocality": "Park Street",
-              "addressRegion": "Kolkata",
-              "postalCode": "Your Postal Code", // Update with your postal code
+              "streetAddress": "85, Park St, Mullick Bazar, Park Street area", 
+              "addressLocality": "Kolkata",
+              "addressRegion": "West Bengal",
+              "postalCode": "700016", 
               "addressCountry": "IN"
             },
-            "openingHours": "Mo-Sa 09:00-19:00",
+            "openingHours": "Mo-Su 10:00-21:00",
             "telephone": "+91-9903016199",
-            "url": "https://www.salon85.co", // Update with your actual website URL
+            "url": "https://www.salon85.in", // Update with your actual website URL
             "image": "https://www.salon85.com/salon-image.jpg" // Update with actual image URL
+          })
+        }} />
+
+
+        {/* Structured Data for FAQ Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What services does Salon 85 offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Salon 85 offers a variety of grooming and beauty services, including haircuts, styling, makeup, treatments, and more for both men and women."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Salon 85 located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Salon 85 is located in 85, Park St, Mullick Bazar, Park Street area, Kolkata."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the operating hours of Salon 85?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Salon 85 is open from Monday to Sunday, 10:00 AM to 9:00 PM."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I book an appointment at Salon 85?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can book an appointment at Salon 85 by calling +91-9903016199 or through our website at https://www.salon85.in."
+                }
+              }
+            ]
           })
         }} />
       </Head>

@@ -10,7 +10,7 @@ export const StickyScroll = ({
 }: {
   content: {
     title: string;
-    description: string |any ;
+    description: string | any;
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
@@ -39,7 +39,7 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="h-[30rem] bg-gradient-to-br bg-header dark:from-zinc-900 dark:to-gray-900 shadow-xl  overflow-y-auto flex justify-center relative space-x-10 rounded-lg p-3 md:p-10"
+      className="h-[30rem] bg-gradient-to-br bg-header dark:from-zinc-900 dark:to-gray-900 shadow-xl overflow-y-auto flex justify-center relative space-x-10 rounded-lg p-3 md:p-10"
       ref={ref}
     >
       <div className="relative flex items-start px-4">
@@ -47,24 +47,12 @@ export const StickyScroll = ({
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
                 className="text-2xl font-bold text-slate-100"
               >
                 {item.title}
               </motion.h2>
               <motion.p
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-lg text-slate-300 max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>

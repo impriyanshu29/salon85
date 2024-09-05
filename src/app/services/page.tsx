@@ -8,6 +8,7 @@ import makeup from "../../Images/Party Makeup.png"
 import styling from "../../Images/spa.png"
 import treatment from "../../Images/Straightening.png"
 import extension from "../../Images/Extension.png"
+import Head from "next/head";
 const content = [
   {
     title: "Haircut & Styling",
@@ -141,7 +142,7 @@ const content = [
     description: (
       <div className="text-gray-700 dark:text-gray-300 space-y-6">
         <div>
-          <h2 className="text-xl font-semibold text-secBackground dark:text-gray-400 hover:text-primary transition-colors duration-300">
+          <h2 className="text-xl font-semibold text-background dark:text-gray-300 hover:text-primary transition-colors duration-300">
             Bridal Makeup
           </h2>
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
@@ -152,7 +153,7 @@ const content = [
           </ul>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-secBackground dark:text-gray-400 hover:text-primary transition-colors duration-300">
+          <h2 className="text-xl font-semibold text-background dark:text-gray-300 hover:text-primary transition-colors duration-300">
             Party & Event Makeup
           </h2>
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
@@ -273,8 +274,67 @@ const content = [
   },
 ];
 
+
+
 export default function Services() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+      "@type": "BeautySalon",
+      "name": "Salon 85",
+      "image": "https://salon85.in/images/salon85-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "85, Park St, Mullick Bazar, Park Street area", 
+        "addressLocality": "Kolkata",
+        "addressRegion": "West Bengal",
+        "postalCode": "700016", 
+        "addressCountry": "IN"
+      },
+
+      "telephone": "+91-9903016199"
+    },
+    "serviceType": [
+      "Haircut",
+      "Hair Styling",
+      "Bridal Makeup",
+      "Hair Treatments",
+      "Chemical Treatments",
+      "Hair Extensions"
+    ],
+    "areaServed": "Kolkata",
+    "description": "Salon 85 offers premium services in haircuts, styling, bridal makeup, and hair treatments in Kolkata."
+  };
   return (
+    <>
+    <Head>
+    <title>Services at Salon 85 - Haircuts, Styling, Treatments</title>
+    <meta
+      name="description"
+      content="Discover premium services at Salon 85, Kolkata: haircuts, bridal makeup, hair styling, treatments, and more. Book your VIP salon experience today!"
+    />
+    <meta
+      name="keywords"
+      content="Salon 85, haircuts, bridal makeup, party styling, hair treatments, hair extensions, chemical treatments, salon Park Street Kolkata"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Salon 85  Services - Haircuts, Styling & Treatments" />
+    <meta
+      property="og:description"
+      content="Get the best salon services for men and women in Park Street, Kolkata. Haircuts, bridal makeup, styling, and luxurious hair treatments await!"
+    />
+    <meta property="og:url" content="https://salon85.in/services" />
+    <meta property="og:image" content="/images/salon85-services.jpg" />
+    <link rel="canonical" href="https://salon85.in/services" />
+
+
+    <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+
+  </Head>
     <div className="mx-auto my-3 py-8 max-w-7xl px-4 sm:px-6 md:my-24 lg:my-32 lg:px-8">
       {/* Header Section */}
       <div className="mx-auto pt-12 lg:pt-4 max-w-xl pb-9 text-center">
@@ -293,5 +353,6 @@ export default function Services() {
         <StickyScroll content={content} />
       </div>
     </div>
+    </>
   );
 }

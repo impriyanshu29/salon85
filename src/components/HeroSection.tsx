@@ -27,18 +27,24 @@ function HeroSection() {
       <div className="relative w-full bg-gradient-to-r  dark:from-black dark:to-gray-900 bg-background">
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
           <div className="flex flex-col justify-center px-2 py-12 md:py-16 lg:col-span-8 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-7">
+          <Link
+              href="/services"
+            >
           <div className="mt-8 flex max-w-max items-center justify-center lg:justify-normal mx-auto lg:mx-0 space-x-2 rounded-full bg-header dark:bg-black  p-2">
+           
+            
+          
               <div className="rounded-full bg-iconBg dark:bg-zinc-900/70 p-1 px-2">
                 <p className="text-sm text-background font-medium">Why Our </p>
               </div>
               <p className=" text-base text-background  ">Services → </p>
             </div>
-           
+            </Link>
             <h1 className="mt-8 text-3xl font-bold font-headingFont leading-normal    text-iconBg lg:text-left text-center md:text-4xl lg:text-5xl dark:text-gray-200">
-            Elevating Grooming Standards for Everyone
+            Great Hair, Great Day – Unveil the New You
             </h1>
             <p className="mt-4 text-center lg:text-left text-base md:text-lg  font-subheadingFont text-header dark:text-gray-300">
-            Discover Park Street’s premier destination for sophisticated grooming. At Salon85, we blend modern techniques with timeless elegance, offering a refined experience for both men and women.
+            Discover Park Street’s premier destination for sophisticated grooming. At Salon 85, we blend modern techniques with timeless elegance, offering a refined experience for both men and women.
             </p>
             <div className='flex flex-row justify-around lg:gap-12 lg:justify-normal'>
             <div className=" mt-8 flex items-center lg:items-left lg:justify-start  justify-center">
