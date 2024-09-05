@@ -53,7 +53,14 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-background pt-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-background">&copy; {new Date().getFullYear()} Salon 85. All rights reserved.</p>
-          <p className="text-background font-thin text-sm mt-4 md:text-base  "> Made with ❤️ by Indian</p>
+          <p className="text-background font-thin text-sm mt-4 md:text-base  "> Made with ❤️ by {" "} 
+          <a
+              href={`mailto:priyanshutiwari2901@hotmail.com`}
+              className="text-background font-bold cursor-pointer  hover:text-gray-100 "
+            >
+             Indian
+            </a>
+            </p>
           <ul className="flex space-x-4 mt-4 md:mt-0">
             <li>
               <Link href="/" className="text-background  hover:text-white transition-colors duration-300">Home</Link>

@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 import ReviewCards from "@/components/Review";
+import GMap from "@/components/Map";
 export default function Home() {
   return (
    <main className="min-h-screen bg-gradient-to-r   dark:from-black dark:to-gray-900 bg-background antialiased bg-grid-white/[0.2]">
@@ -11,6 +12,7 @@ export default function Home() {
    <Feature />
    <FAQ />
    <ReviewCards/>
+   <GMap/>
    </main>
   );
 }

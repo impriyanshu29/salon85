@@ -54,11 +54,11 @@ const faqs = [
    Common Queries for Our Salon Services
    </h2>
  </div>
-      <div className="mx-auto mt-8 max-w-3xl space-y-4 md:mt-16">
+      <div className="mx-auto mt-8 rounded-xl  max-w-3xl space-y-4 md:mt-16">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="cursor-pointer rounded-md border border-iconBg dark:border-gray-200 shadow-lg transition-all duration-200"
+            className="cursor-pointer rounded-md border hover:shadow-lg hover:border-header  border-iconBg dark:border-gray-200 shadow-lg transition-all duration-200"
           >
             <button
               type="button"
