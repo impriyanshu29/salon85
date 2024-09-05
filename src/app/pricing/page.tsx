@@ -271,7 +271,7 @@ export default function Price() {
             sx={{ maxWidth: '100%', zIndex: 10, backgroundColor: 'inherit' }}
           >
             <Table aria-label="collapsible table">
-              <TableHead className='bg-iconBg dark:bg-black' >
+              <TableHead className='bg-iconBg text-background dark:text-gray-300 dark:bg-black' >
                 <TableRow>
                   <TableCell />
                   <TableCell
