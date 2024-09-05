@@ -1,6 +1,7 @@
 "use client";
 
 import Head from 'next/head';
+import Link from 'next/link';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Collapse from '@mui/material/Collapse';
@@ -95,8 +96,8 @@ function Row(props: { row: ReturnType<typeof createData> }) {
 const rows = [
   createData(' Hair Cut & Style', [
     { subServiceId: 1, subService: 'Ladies Hair Cut', price: "799/999" },
-    { subServiceId: 2, subService: 'Gents Hair Cut', price: "399/449" },
-    { subServiceId: 3, subService: 'Child Hair Cut', price: "199/249" },
+    { subServiceId: 2, subService: 'Gents Hair Cut', price: "399/499" },
+    { subServiceId: 3, subService: 'Child Hair Cut', price: "199/299" },
     { subServiceId: 4, subService: 'Loreal Hair Spa', price: "1499" },
     { subServiceId: 5, subService: 'Moroccan Hair Spa', price: "1999" },
     { subServiceId: 6, subService: 'Root Touch Up', price: "1499/1799" },
@@ -109,7 +110,7 @@ const rows = [
     { subServiceId: 1, subService: 'Global Hair Color(Gents)', price: "1499/1799" },
     { subServiceId: 2, subService: 'Global Hair Color(Ladies)', price: "2499/2999" },
     { subServiceId: 3, subService: 'Balayage', price: "4999" },
-    { subServiceId: 4, subService: 'Ombre', price: "5444" },
+    { subServiceId: 4, subService: 'Ombre', price: "5499" },
     { subServiceId: 5, subService: 'Keratein Treatment Starting', price: "3999" },
     { subServiceId: 6, subService: 'Botox Starting', price: "4999" },
 
@@ -123,8 +124,8 @@ const rows = [
     { subServiceId: 5, subService: 'Face Cleanup', price: "999/1499/1999" },
     { subServiceId: 6, subService: 'Honey Hand Wax', price: "499" },
     { subServiceId: 7, subService: 'Leg Half/Full Wax', price: "449/699" },
-    { subServiceId: 8, subService: 'Under Arm Wax(Both)', price: "149" },
-    { subServiceId: 9, subService: 'Rice Hand Wax', price: "699" },
+    { subServiceId: 8, subService: 'Under Arm Wax(Both)', price: "199" },
+    { subServiceId: 9, subService: 'Rica Hand Wax', price: "699" },
 
 
 
@@ -138,9 +139,9 @@ const rows = [
     { subServiceId: 6, subService: 'Glitter Half', price: "299" },
     { subServiceId: 7, subService: 'Glitter Full', price: "499" },
     { subServiceId: 8, subService: 'Chroma', price: "599" },
-    { subServiceId: 9, subService: 'Stone Per piece', price: "20" },
-    { subServiceId: 10, subService: 'Nail Brush Art Per FInger', price: "150" },
-    { subServiceId: 11, subService: 'Tape Line Per Finger', price: "15" },
+    { subServiceId: 9, subService: 'Stone Per piece', price: "19" },
+    { subServiceId: 10, subService: 'Nail Brush Art Per FInger', price: "199" },
+    { subServiceId: 11, subService: 'Tape Line Per Finger', price: "19" },
     { subServiceId: 12, subService: 'Ombre', price: "499" },
     { subServiceId: 13, subService: 'Cateye', price: "199" },
     { subServiceId: 14, subService: 'Removal', price: "499" },
@@ -161,7 +162,7 @@ const rows = [
     { subServiceId: 2, subService: 'Groom Makeup Starting', price: "2499" },
     { subServiceId: 3, subService: 'Light Party Makeup ', price: "699" },
     { subServiceId: 4, subService: 'Haldi/Sangeet/Mehendi Makeup Starting', price: "999" },
-    { subServiceId: 5, subService: 'Eye Makeup', price: "249" },
+    { subServiceId: 5, subService: 'Eye Makeup', price: "299" },
     { subServiceId: 6, subService: 'Hair Do Starting', price: "699" },
     { subServiceId: 7, subService: 'Saree Drapping', price: "699/999" },
 
@@ -285,6 +286,16 @@ export default function Price() {
             </Table>
           </TableContainer>
         </Box>
+        <p className="textbase mt-6 text-center text-gray-600">
+        Can not find what you are looking for?{" "}
+        <Link
+          href="https://wa.me/919903016199" target='_blank'
+          title='Contact Us'
+          className="font-semibold text-iconBg dark:text-gray-200 hover:underline"
+        >
+          Contact Us
+        </Link>
+      </p>
       </div>
     </>
   );

@@ -13,7 +13,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <h2 className="text-2xl font-semibold">Get in Touch</h2>
-            <p className="mt-2">Great Hair,Great Day - Salon 85 , 85 Park St, Mullick Bazar, Park Street area, Kolkata</p>
+            <p className="mt-2">Great Hair , Great Day - Salon 85 , 85 Park St, Mullick Bazar, Park Street area, Kolkata</p>
             <p className="mt-2">Open from 10 AM to 9 PM, Monday to Sunday (Prior booking required for special hours)  </p>
            
         

@@ -9,6 +9,7 @@ import styling from "../../Images/spa.png"
 import treatment from "../../Images/Straightening.png"
 import extension from "../../Images/Extension.png"
 import Head from "next/head";
+import Link from "next/link";
 const content = [
   {
     title: "Haircut & Styling",
@@ -21,8 +22,9 @@ const content = [
           <ul className="list-disc ml-6 mt-2 text-secBackground dark:text-gray-400 space-y-1">
             <li className="hover:text-primary transition-colors duration-300">Classic Cut</li>
             <li className="hover:text-primary transition-colors duration-300">Fade/Undercut</li>
-            <li className="hover:text-primary transition-colors duration-300">Beard Trim & Shape</li>
-            <li className="hover:text-primary transition-colors duration-300">Grooming Package (Haircut + Beard Trim)</li>
+            <li className="hover:text-primary transition-colors duration-300">Beard Trim/Shape</li>
+            <li className="hover:text-primary transition-colors duration-300">Grooming Package (Haircut/Beard Trim/Beard Shave) </li>
+            
           </ul>
         </div>
         <div>
@@ -32,7 +34,7 @@ const content = [
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
             <li className="hover:text-primary transition-colors duration-300">Classic Cut</li>
             <li className="hover:text-primary transition-colors duration-300">Layered Cut</li>
-            <li className="hover:text-primary transition-colors duration-300">Bob & Pixie Cut</li>
+            <li className="hover:text-primary transition-colors duration-300">Bob/Pixie Cut</li>
             <li className="hover:text-primary transition-colors duration-300">Bangs/Fringe Styling</li>
           </ul>
         </div>
@@ -43,6 +45,7 @@ const content = [
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
             <li className="hover:text-primary transition-colors duration-300">Boy Haircut</li>
             <li className="hover:text-primary transition-colors duration-300">Girl Haircut</li>
+            <li className="hover:text-primary transition-colors duration-300">Any Haircut</li>
           </ul>
         </div>
         <div>
@@ -53,12 +56,12 @@ const content = [
             <li className="hover:text-primary transition-colors duration-300">Global Hair Color</li>
             <li className="hover:text-primary transition-colors duration-300">Permanent Color</li>
             <li className="hover:text-primary transition-colors duration-300">Semi-Permanent Color</li>
-            <li className="hover:text-primary transition-colors duration-300">Grooming Package (Haircut + Beard Trim)</li>
+            <li className="hover:text-primary transition-colors duration-300">Grooming Package (Haircut/Beard Trim)</li>
           </ul>
         </div>
         <div>
           <h2 className="text-xl font-semibold text-background dark:text-gray-300 hover:text-primary transition-colors duration-300">
-            Highlights & Lowlights
+            Highlights/Lowlights
           </h2>
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
             <li className="hover:text-primary transition-colors duration-300">Full Head</li>
@@ -73,7 +76,7 @@ const content = [
           </h2>
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
             <li className="hover:text-primary transition-colors duration-300">Pastel Shades</li>
-            <li className="hover:text-primary transition-colors duration-300">Bold & Vibrant Colors</li>
+            <li className="hover:text-primary transition-colors duration-300">Bold/Vibrant Colors</li>
             <li className="hover:text-primary transition-colors duration-300">Color Correction</li>
           </ul>
         </div>
@@ -198,7 +201,7 @@ const content = [
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
             <li className="hover:text-primary transition-colors duration-300">Blow Dry</li>
             <li className="hover:text-primary transition-colors duration-300">Straightening</li>
-            <li className="hover:text-primary transition-colors duration-300">Updos & Braiding</li>
+            <li className="hover:text-primary transition-colors duration-300">Updos/Braiding</li>
             <li className="hover:text-primary transition-colors duration-300">Curling</li>
           </ul>
         </div>
@@ -256,7 +259,7 @@ const content = [
         <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
           <li className="hover:text-primary transition-colors duration-300">Hair Extensions</li>
           <li className="hover:text-primary transition-colors duration-300">Hair Weaving</li>
-          <li className="hover:text-primary transition-colors duration-300">Wig Fitting & Styling</li>
+          <li className="hover:text-primary transition-colors duration-300">Wig Fitting/Styling</li>
         </ul>
       </div>
     ),
@@ -352,6 +355,16 @@ export default function Services() {
       <div className="p-10">
         <StickyScroll content={content} />
       </div>
+      <p className="textbase mt-6 text-center text-gray-600">
+        Can not find what you are looking for?{" "}
+        <Link
+          href="https://wa.me/919903016199" target='_blank'
+          title='Contact Us'
+          className="font-semibold text-iconBg dark:text-gray-200 hover:underline"
+        >
+          Contact Us
+        </Link>
+      </p>
     </div>
     </>
   );

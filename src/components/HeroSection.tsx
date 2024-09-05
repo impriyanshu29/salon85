@@ -44,7 +44,7 @@ function HeroSection() {
             Great Hair, Great Day – Unveil the New You
             </h1>
             <p className="mt-4 text-center lg:text-left text-base md:text-lg  font-subheadingFont text-header dark:text-gray-300">
-            Discover Park Street’s premier destination for sophisticated grooming. At Salon 85, we blend modern techniques with timeless elegance, offering a refined experience for both men and women.
+            Discover Kolkata's Park Street premier destination for sophisticated grooming. At Salon 85, we blend modern techniques with timeless elegance, offering a refined experience for both men and women.
             </p>
             <div className='flex flex-row justify-around lg:gap-12 lg:justify-normal'>
             <div className=" mt-8 flex items-center lg:items-left lg:justify-start  justify-center">
@@ -68,6 +68,7 @@ function HeroSection() {
       </Link>
     </div>
     <div className=" mt-8 flex items-center lg:items-left lg:justify-start  justify-center">
+    <Link href="/pricing">
       <Modal>
         <ModalTrigger className="bg-header border border-header dark:border-zinc-900 dark:text-gray-200 text-background dark:bg-zinc-900/70 flex justify-center group/modal-btn">
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
@@ -79,6 +80,7 @@ function HeroSection() {
         </ModalTrigger>
         
       </Modal>
+      </Link>
     </div>
             </div>
             
