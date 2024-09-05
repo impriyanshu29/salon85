@@ -44,7 +44,7 @@ function HeroSection() {
             Great Hair, Great Day – Unveil the New You
             </h1>
             <p className="mt-4 text-center lg:text-left text-base md:text-lg  font-subheadingFont text-header dark:text-gray-300">
-            Discover Kolkata's Park Street premier destination for sophisticated grooming. At Salon 85, we blend modern techniques with timeless elegance, offering a refined experience for both men and women.
+            Discover Kolkata’s Park Street premier destination for sophisticated grooming. At Salon 85, we blend modern techniques with timeless elegance, offering a refined experience for both men and women.
             </p>
             <div className='flex flex-row justify-around lg:gap-12 lg:justify-normal'>
             <div className=" mt-8 flex items-center lg:items-left lg:justify-start  justify-center">
