@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import { useTheme } from "@/context/ThemeContext"; // Adjust the import path as needed
 import { IconSun, IconMoon } from "@tabler/icons-react"; // Use any icons you pref
+import Link from "next/link";
 export function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const handleToggle = () => {
@@ -59,7 +60,9 @@ export function Navbar() {
     <>
     <div className="relative flex items-center justify-center dark:bg-stone-950/90 w-full">
       <div className="fixed top-4 left-4 p-2 rounded-full  z-50">
+        <Link href="/">
         <h3 className="font-headingFont font-extrabold text-iconBg dark:text-gray-200 text-2xl"> Salon 85</h3>
+        </Link>
       </div>
       <FloatingDock
         desktopClassName="fixed top-14 z-50"

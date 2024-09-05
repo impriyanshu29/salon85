@@ -9,7 +9,7 @@ import { MdOutlineHomeRepairService } from "react-icons/md";
 function Feature() {
   return (
   
- <div className="mx-auto my-3 py-8 max-w-7xl bg-gradient-to-r bg-secBackground dark:from-black dark:to-gray-900 px-4 sm:px-6 md:my-24 lg:my-32 lg:px-8">
+ <div className="mx-auto my-3 py-8 max-w-7xl bg-gradient-to-r bg-secBackground dark:from-black dark:to-gray-900 px-4 sm:px-6 md:my-20 lg:my-0 lg:px-8">
  <div className="mx-auto pt-4 max-w-xl text-center">
    <div className="mx-auto inline-flex rounded-full bg-iconBg dark:bg-black px-4 py-1.5">
      <p className="text-xs font-semibold uppercase tracking-widest text-background">

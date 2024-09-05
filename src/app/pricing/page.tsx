@@ -228,7 +228,7 @@ export default function Price() {
   }, []);
   return (
     <>
-    <Head>
+      <Head>
         <title>Salon 85 - Pricing & Services</title>
         <meta name="description" content="Discover the premium pricing of Salon 85 for haircuts, makeup, styling, and other beauty services in Kolkata. Explore our extensive range of VIP salon services for men and women." />
         <meta name="keywords" content="Salon 85, VIP Salon, haircuts, makeup, styling, Kolkata, beauty services, hair spa, bridal makeup, waxing, nails" />
@@ -268,14 +268,33 @@ export default function Price() {
           <TableContainer
             className='bg-background  bg-gradient-to-br shadow-lg rounded-xl dark:from-zinc-900 dark:to-gray-900 border border-iconBg dark:border-gray-300'
             component={Paper}
-            sx={{ maxWidth: '100%', zIndex: 10, backgroundColor: 'inherit' }}  
+            sx={{ maxWidth: '100%', zIndex: 10, backgroundColor: 'inherit' }}
           >
             <Table aria-label="collapsible table">
               <TableHead className='bg-iconBg dark:bg-black' >
                 <TableRow>
                   <TableCell />
-                  <TableCell className='text-background  font-headingFont font-bold dark:text-gray-300 ' sx={{  backgroundColor: 'inherit' }}  >Service</TableCell>
-                  <TableCell className='text-background font-headingFont font-bold dark:text-gray-300' align="right" sx={{  backgroundColor: 'inherit' }}  >Total Sub-Services</TableCell>
+                  <TableCell
+                    className="text-background font-headingFont font-bold dark:text-gray-300 bg-inherit dark:bg-gray-800"
+                    sx={{
+                      backgroundColor: 'inherit',
+                      color: 'inherit',
+                    }}
+                  >
+                    Service
+                  </TableCell>
+
+                  <TableCell
+                    className="text-background font-headingFont font-bold dark:text-gray-300 bg-inherit dark:bg-gray-800"
+                    align="right"
+                    sx={{
+                      backgroundColor: 'inherit',
+                      color: 'inherit', 
+                    }}
+                  >
+                    Total Sub-Services
+                  </TableCell>
+
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -287,15 +306,15 @@ export default function Price() {
           </TableContainer>
         </Box>
         <p className="textbase mt-6 text-center text-gray-600">
-        Can not find what you are looking for?{" "}
-        <Link
-          href="https://wa.me/919903016199" target='_blank'
-          title='Contact Us'
-          className="font-semibold text-iconBg dark:text-gray-200 hover:underline"
-        >
-          Contact Us
-        </Link>
-      </p>
+          Can not find what you are looking for?{" "}
+          <Link
+            href="https://wa.me/919903016199" target='_blank'
+            title='Contact Us'
+            className="font-semibold text-iconBg dark:text-gray-200 hover:underline"
+          >
+            Contact Us
+          </Link>
+        </p>
       </div>
     </>
   );
