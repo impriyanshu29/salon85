@@ -13,9 +13,6 @@ import {
 
 import {
   Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
   ModalTrigger,
 
   
