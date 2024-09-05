@@ -65,7 +65,7 @@ export default function AboutPageOne() {
 
 
             <h1 className="-mt-4 md:mt-8 text-2xl font-bold font-headingFont leading-normal    text-iconBg lg:text-left text-center md:text-3xl lg:text-4xl dark:text-gray-200">
-              Step into Luxury at Salon85, Park Street's Leading VIP Salon
+              Step into Luxury at Salon85, Park Street Leading VIP Salon
             </h1>
             <p className="mt-4 text-center lg:text-left text-base md:text-lg  font-subheadingFont text-header dark:text-gray-300">
               Welcome to Salon85, the leading unisex salon on Park Street, Kolkata. We offer top-quality hair treatments, facials, and makeup at competitive prices. Visit us today and discover why Salon85 is the preferred choice for luxury beauty services in Kolkata.
