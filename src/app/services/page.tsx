@@ -15,7 +15,7 @@ const content = [
       <div className="space-y-6">
         <div>
           <h2 className="text-xl font-semibold text-background dark:text-gray-300 hover:text-primary transition-colors duration-300">
-            Men's Haircut
+            Men Haircut
           </h2>
           <ul className="list-disc ml-6 mt-2 text-secBackground dark:text-gray-400 space-y-1">
             <li className="hover:text-primary transition-colors duration-300">Classic Cut</li>
@@ -26,7 +26,7 @@ const content = [
         </div>
         <div>
           <h2 className="text-xl font-semibold text-background dark:text-gray-300 hover:text-primary transition-colors duration-300">
-            Women's Haircut
+            Women Haircut
           </h2>
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
             <li className="hover:text-primary transition-colors duration-300">Classic Cut</li>
@@ -37,11 +37,11 @@ const content = [
         </div>
         <div>
           <h2 className="text-xl font-semibold text-background dark:text-gray-300 hover:text-primary transition-colors duration-300">
-            Kid's Haircut
+            Kid Haircut
           </h2>
           <ul className="list-disc ml-6 mt-2 space-y-1 text-secBackground dark:text-gray-400">
-            <li className="hover:text-primary transition-colors duration-300">Boy's Haircut</li>
-            <li className="hover:text-primary transition-colors duration-300">Girl's Haircut</li>
+            <li className="hover:text-primary transition-colors duration-300">Boy Haircut</li>
+            <li className="hover:text-primary transition-colors duration-300">Girl Haircut</li>
           </ul>
         </div>
         <div>
