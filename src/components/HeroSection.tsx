@@ -48,7 +48,7 @@ function HeroSection() {
             </p>
             <div className='flex flex-row justify-around lg:gap-12 lg:justify-normal'>
             <div className=" mt-8 flex items-center lg:items-left lg:justify-start  justify-center">
-            <Link href="https://wa.me/919903016199" target="_blank">
+            <Link href="https://wa.me/919123969269" target="_blank">
       <Modal>
         <ModalTrigger className="bg-background border border-header dark:border-zinc-700 dark:text-gray-200 text-header dark:bg-stone-950 flex justify-center group/modal-btn">
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">

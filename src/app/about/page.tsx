@@ -184,7 +184,7 @@ export default function AboutPageOne() {
         <p className="textbase mt-6 text-center text-gray-600">
         Can not find what you are looking for?{" "}
         <Link
-          href="https://wa.me/919903016199" target='_blank'
+          href="https://wa.me/919123969269" target='_blank'
           title='Contact Us'
           className="font-semibold text-iconBg dark:text-gray-200 hover:underline"
         >

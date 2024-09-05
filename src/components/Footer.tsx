@@ -13,7 +13,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <h2 className="text-2xl font-semibold">Get in Touch</h2>
-            <p className="mt-2">Great Hair , Great Day - Salon 85 , 85 Park St, Mullick Bazar, Park Street area, Kolkata</p>
+            <p className="mt-2"> Salon 85, 85 Park St, Mullick Bazar, Park Street area, Kolkata</p>
             <p className="mt-2">Open from 10 AM to 9 PM, Monday to Sunday (Prior booking required for special hours)  </p>
            
         
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-background pt-4 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-background">&copy; {new Date().getFullYear()} Salon 85. All rights reserved.</p>
+          <p className="text-background">&copy; 2024 Salon 85. All rights reserved.</p>
           <p className="text-background font-thin text-sm mt-4 md:text-base  "> Made with ❤️ by {" "} 
           <a
               href={`mailto:priyanshutiwari2901@hotmail.com`}
