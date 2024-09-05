@@ -48,13 +48,13 @@ export function Footer() {
               <Link href="/" className="text-background  hover:text-white transition-colors duration-300">Home</Link>
             </li>
             <li>
-              <Link href="/resume" className="text-background  hover:text-white transition-colors duration-300">Contact</Link>
+              <Link href="/about" className="text-background  hover:text-white transition-colors duration-300">About</Link>
             </li>
             <li>
-              <Link href="/works" className="text-background hover:text-white transition-colors duration-300">Services</Link>
+              <Link href="/services" className="text-background hover:text-white transition-colors duration-300">Services</Link>
             </li>
             <li>
-              <Link href="/contact" className="text-background  hover:text-white transition-colors duration-300">Prices</Link>
+              <Link href="/pricing" className="text-background  hover:text-white transition-colors duration-300">Prices</Link>
             </li>
           </ul>
         </div>
